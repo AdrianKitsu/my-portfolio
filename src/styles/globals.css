@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Caslon";
+  src: url("../assets/fonts/CaslonGraphique-Opti.otf");
+  letter-spacing: 0.2px;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("../assets/fonts/futur.ttf");
+}
+
+body {
+  background-color: #312f30;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Caslon", sans-serif;
+  font-size: 64px;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: "Caslon", sans-serif;
+  font-size: 56px;
+  font-weight: 600;
+}
+
+h3 {
+  font-family: "Caslon", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+p {
+  font-family: "Futura", sans-serif;
+  font-size: 18px;
+}
