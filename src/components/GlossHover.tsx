@@ -43,7 +43,7 @@ const GlossHover = ({
           }}
         />
         <div
-          className={`w-full bg-transparent h-[60px] absolute bottom-0 left-1/2 z-20 -translate-x-1/2 transition-opacity duration-500 ease-in-out flex justify-center ${
+          className={`w-full bg-[#00000057] h-[60px] absolute bottom-0 left-1/2 z-20 -translate-x-1/2 transition-opacity duration-500 ease-in-out flex justify-center ${
             isHovering ? "opacity-100" : "opacity-0"
           }`}
         >

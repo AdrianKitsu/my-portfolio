@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const textshadow = require("tailwindcss-textshadow");
+
 module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -21,6 +23,9 @@ module.exports = {
       },
       width: {
         420: "420px",
+      },
+      textShadow: {
+        dark: "9px 9px 9px rgba(0, 0, 0, 1)",
       },
     },
   },
