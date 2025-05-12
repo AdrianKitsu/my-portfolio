@@ -43,13 +43,13 @@ const GlossHover = ({
           }}
         />
         <div
-          className={`w-full bg-[#312c2c63] h-[60px] absolute bottom-0 left-1/2 z-20 -translate-x-1/2 transition-opacity duration-500 ease-in-out flex justify-center ${
+          className={`w-full bg-transparent h-[60px] absolute bottom-0 left-1/2 z-20 -translate-x-1/2 transition-opacity duration-500 ease-in-out flex justify-center ${
             isHovering ? "opacity-100" : "opacity-0"
           }`}
         >
           <a
             href={portfolioRedirect}
-            className="items-center mr-[20px] px-4 py-2 rounded-full text-[21px] font-caslon font-normal text-white hover:scale-110 duration-500 mix-blend-difference text-[#eeeeee]"
+            className="items-center mr-[20px] px-4 py-2 rounded-full text-[21px] place-content-center font-caslon font-normal text-white hover:scale-110 duration-500 mix-blend-difference text-[#eeeeee] tracking-[0.5px]"
           >
             Learn more →
           </a>
