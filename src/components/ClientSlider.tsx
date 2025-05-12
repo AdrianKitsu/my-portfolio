@@ -80,7 +80,7 @@ const ClientSlider = () => {
 
   return (
     <>
-      <h2 className="mb-5 text-center text-[#fcfcfc]">
+      <h2 className="mb-5 text-center text-[#fcfcfc] tracking-[4px]">
         Clients I've Worked With
       </h2>
       <div className="overflow-hidden w-full bg-[#fcfcfc] py-5">
