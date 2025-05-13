@@ -9,10 +9,10 @@ import GlossHover from "./GlossHover";
 const Projects = () => {
   return (
     <>
-      <h2 className="mb-[10px] text-center text-[#fcfcfc] tracking-[4px]">
+      <h2 className="mb-[10px] text-[40px] sm:text-[60px] text-center text-[#fcfcfc] sm:tracking-[4px] sm:text-2xl">
         Projects I've Worked On
       </h2>
-      <div className="panel-container grid sm:grid-cols-1 md:grid-cols-3 gap-10 justify-items-center mx-auto max-w-fit">
+      <div className="panel-container grid sm:grid-cols-1 md:grid-cols-3 gap-5 sm:gap-10 justify-items-center sm:mx-auto sm:max-w-fit ">
         <GlossHover
           image={FutureLaunch}
           alt="Future Launch"
