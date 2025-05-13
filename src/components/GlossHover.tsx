@@ -34,7 +34,7 @@ const GlossHover = ({
         onMouseEnter={handleEnter}
         onMouseLeave={handleLeave}
         onMouseMove={handleMouseMove}
-        className="relative group sm:w-[420px] w-[210px] rounded-[35px] overflow-hidden hover:scale-105 transition-transform duration-500 ease-in-out cursor-pointer"
+        className="relative group sm:w-[420px] w-full rounded-[35px] overflow-hidden hover:scale-105 transition-transform duration-500 ease-in-out cursor-pointer"
       >
         <div
           className="absolute inset-0 z-10 pointer-events-none transition-all duration-500 ease-out"
@@ -43,9 +43,8 @@ const GlossHover = ({
           }}
         />
         <div
-          className={`w-full bg-[#00000057] h-[60px] absolute bottom-0 left-1/2 z-20 -translate-x-1/2 transition-opacity duration-500 ease-in-out flex justify-center ${
-            isHovering ? "opacity-100" : "opacity-0"
-          }`}
+          className={`w-full bg-[#00000057] h-[60px] absolute bottom-0 left-1/2 z-20 -translate-x-1/2 transition-opacity duration-500 ease-in-out flex justify-center
+    opacity-100 ${isHovering ? "sm:opacity-100" : "sm:opacity-0"}`}
         >
           <a
             href={portfolioRedirect}
