@@ -52,11 +52,11 @@ const Portfolio = () => {
 
   return (
     <>
-      <h2 className="mb-5 text-center text-[#fcfcfc] tracking-[4px]">
+      <h2 className="mb-5 text-center text-[#fcfcfc] tracking-[4px] text-[40px] sm:text-[60px]">
         Projects I've developed
       </h2>
       <div className="wrapper w-[90%] max-w-7xl mx-auto mt-12">
-        <div className="flex flex-wrap justify-between border-b border-gray-300 mb-10">
+        <div className="hidden sm:flex flex-wrap justify-between border-b border-gray-300 mb-10">
           {tabs.map((tab) => (
             <button
               key={tab.id}
@@ -70,6 +70,24 @@ const Portfolio = () => {
               {tab.label}
             </button>
           ))}
+        </div>
+
+        <div className="sm:hidden overflow-x-auto scrollbar-hide mb-10">
+          <div className="flex min-w-max border-b border-gray-300">
+            {tabs.map((tab) => (
+              <button
+                key={tab.id}
+                onClick={() => setActiveTab(tab.label)}
+                className={`whitespace-nowrap px-4 py-4 font-futura text-lg transition-colors duration-300 ${
+                  activeTab === tab.label
+                    ? "border-b-4 border-[#3b9ff0] text-[#3b9ff0] font-semibold tracking-[0.5px]"
+                    : "text-gray-500 hover:text-[white]"
+                }`}
+              >
+                {tab.label}
+              </button>
+            ))}
+          </div>
         </div>
 
         <div className="bg-white shadow-md rounded-xl p-6 md:p-10 grid md:grid-cols-2 gap-6 items-start transition-all duration-300">
