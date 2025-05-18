@@ -60,7 +60,10 @@ const Portfolio = () => {
           {tabs.map((tab) => (
             <button
               key={tab.id}
-              onClick={() => setActiveTab(tab.label)}
+              onClick={() => {
+                setActiveTab(tab.label);
+                window.location.hash = tab.id;
+              }}
               className={`flex-1 text-center py-4 font-futura text-lg transition-colors duration-300 ${
                 activeTab === tab.label
                   ? "border-b-4 border-[#3b9ff0] text-[#3b9ff0] font-semibold tracking-[0.5px]"
@@ -77,7 +80,10 @@ const Portfolio = () => {
             {tabs.map((tab) => (
               <button
                 key={tab.id}
-                onClick={() => setActiveTab(tab.label)}
+                onClick={() => {
+                  setActiveTab(tab.label);
+                  window.location.hash = tab.id;
+                }}
                 className={`whitespace-nowrap px-4 py-4 font-futura text-lg transition-colors duration-300 ${
                   activeTab === tab.label
                     ? "border-b-4 border-[#3b9ff0] text-[#3b9ff0] font-semibold tracking-[0.5px]"
