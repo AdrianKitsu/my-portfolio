@@ -8,6 +8,7 @@ module.exports = {
       fontFamily: {
         caslon: ["Caslon", "sans-serif"],
         futura: ["Futura", "sans-serif"],
+        urw: ["Urw", "sans-serif"],
       },
       keyframes: {
         scroll: {

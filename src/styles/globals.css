@@ -13,6 +13,11 @@
   src: url("../assets/fonts/futur.ttf");
 }
 
+@font-face {
+  font-family: "Urw";
+  src: url("../assets/fonts/urw-din-regular.ttf");
+}
+
 body {
   background-color: #312f30;
   margin: 0;
