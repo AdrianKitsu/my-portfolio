@@ -69,7 +69,7 @@ const About = () => {
         <h4 className="mt-[30px] mb-[15px]">
           <a
             className="font-caslon text-[26px] text-[#312f30] mt-[30px] mb-[15px] hover:text-[28px] hover:text-[#3b9ff0] duration-500 ease-in-out cursor-pointer"
-            href="/CV.pdf"
+            href="/Adrian Borges Solari - CV.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
