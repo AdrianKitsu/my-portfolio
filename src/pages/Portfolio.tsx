@@ -14,6 +14,7 @@ const tabs = [
   { label: "Lightlife", id: "tab-tempeh" },
   { label: "Grab 'N Snack", id: "tab-gns" },
   { label: "Thought Leadership", id: "tab-thought" },
+  { label: "Sales Resource Center", id: "tab-src" },
 ];
 
 const tabContent: {
@@ -52,7 +53,7 @@ const tabContent: {
   "Sales Resource Center": {
     image: insuranceBanner,
     href: "https://www.advisor.rbcinsurance.com/en/",
-    text: `Following the success of the initial RBC migration project, I was given the opportunity to help bring an additional two legacy sites, Thought Leadership and Climate Action Institute, into the WordPress ecosystem. With only the existing legacy sites and new design files as reference, our team worked closely with the client to define how each component should behave, providing recommendations on editing workflows, reusability, and scalability within Gutenberg.`,
+    text: `With the continued trust from our friends at RBC, I was given the opportunity to work on migrating and improving there Sales Resource Center site. The goal for this project was to add a variety of filters.`,
     text2: `My role focused on rebuilding existing components with enhanced dynamic functionality to give content authors more flexibility, as well as developing new React-based blocks aligned to the updated design system. I also created key pages, custom templates, navigation menus, and reusable patterns to accurately reflect the original site structure while enabling a vastly improved publishing experience.`,
   },
 };
