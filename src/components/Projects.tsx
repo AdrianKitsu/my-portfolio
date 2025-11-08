@@ -5,6 +5,7 @@ import ThoughtLeadership from "../assets/images/TL.png";
 import Tempehfy from "../assets/images/tempehfy.png";
 import Mitchells from "../assets/images/mitchells.png";
 import GlossHover from "./GlossHover";
+import SRCInsurance from "../assets/images/Insurance-bnr.png";
 
 const projectData = [
   {
@@ -36,6 +37,12 @@ const projectData = [
     alt: "Thought Leadership",
     portfolioRedirect: "portfolio/#tab-tl",
     clientName: "RBC - Thought Leadership",
+  },
+  {
+    image: SRCInsurance,
+    alt: "RBC SRC Insurance",
+    portfolioRedirect: "portfolio/#tab-src",
+    clientName: "RBC Insurance - Sales Resource Center",
   },
 ];
 

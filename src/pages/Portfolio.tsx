@@ -5,6 +5,7 @@ import mitchellsBanner from "../assets/images/laptop-mitchells.png";
 import tempehfyBanner from "../assets/images/tempehfy-cell.png";
 import futureBanner from "../assets/images/FL-desktop.png";
 import thoughtBanner from "../assets/images/TL-phonepng.png";
+import insuranceBanner from "../assets/images/SRC-laptoppng.png";
 import { ReactComponent as ArrowRight } from "../assets/images/ui/arrow-right.svg";
 
 const tabs = [
@@ -45,6 +46,12 @@ const tabContent: {
   "Thought Leadership": {
     image: thoughtBanner,
     href: "https://www.rbc.com/en/thought-leadership/",
+    text: `Following the success of the initial RBC migration project, I was given the opportunity to help bring an additional two legacy sites, Thought Leadership and Climate Action Institute, into the WordPress ecosystem. With only the existing legacy sites and new design files as reference, our team worked closely with the client to define how each component should behave, providing recommendations on editing workflows, reusability, and scalability within Gutenberg.`,
+    text2: `My role focused on rebuilding existing components with enhanced dynamic functionality to give content authors more flexibility, as well as developing new React-based blocks aligned to the updated design system. I also created key pages, custom templates, navigation menus, and reusable patterns to accurately reflect the original site structure while enabling a vastly improved publishing experience.`,
+  },
+  "Sales Resource Center": {
+    image: insuranceBanner,
+    href: "https://www.advisor.rbcinsurance.com/en/",
     text: `Following the success of the initial RBC migration project, I was given the opportunity to help bring an additional two legacy sites, Thought Leadership and Climate Action Institute, into the WordPress ecosystem. With only the existing legacy sites and new design files as reference, our team worked closely with the client to define how each component should behave, providing recommendations on editing workflows, reusability, and scalability within Gutenberg.`,
     text2: `My role focused on rebuilding existing components with enhanced dynamic functionality to give content authors more flexibility, as well as developing new React-based blocks aligned to the updated design system. I also created key pages, custom templates, navigation menus, and reusable patterns to accurately reflect the original site structure while enabling a vastly improved publishing experience.`,
   },
