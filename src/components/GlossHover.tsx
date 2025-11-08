@@ -16,7 +16,7 @@ const GlossHover = ({
   index,
 }: GlossHoverProps) => {
   const [pos, setPos] = useState("0% 0%");
-  const [isHovering, setIsHovering] = useState(false);
+  const [, setIsHovering] = useState(false);
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();

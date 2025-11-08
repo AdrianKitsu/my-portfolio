@@ -17,6 +17,7 @@ const About = () => {
             <img
               className="w-[20px] h-[20px] mr-[10px] mt-[4px]"
               src={LinkedIn}
+              alt="LinkedIn Logo"
             />
             LinkedIn
           </a>
@@ -27,6 +28,7 @@ const About = () => {
             <img
               className="w-[20px] h-[20px] mr-[10px] mt-[4px]"
               src={GitHub}
+              alt="GitHub Logo"
             />
             GitHub
           </a>
