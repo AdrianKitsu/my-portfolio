@@ -65,7 +65,7 @@ const Portfolio = () => {
 
   return (
     <>
-      <h2 className="mb-5 text-center text-[#fcfcfc] tracking-[4px] text-[40px] sm:text-[60px]">
+      <h2 className="mb-5 text-center text-[#fcfcfc] tracking-[4px] text-[40px] sm:text-[60px]  mt-5">
         Projects I've developed
       </h2>
       <div className="wrapper w-[90%] max-w-7xl mx-auto mt-12">

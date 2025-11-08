@@ -5,7 +5,7 @@ import GitHub from "../assets/images/GitHub.png";
 const About = () => {
   return (
     <>
-      <h2 className="mb-5 text-center text-[#fcfcfc] tracking-[4px] text-[40px] sm:text-[60px]">
+      <h2 className="mb-5 text-center text-[#fcfcfc] tracking-[4px] text-[40px] sm:text-[60px] mt-5">
         About
       </h2>
       <div className="w-[90%] mx-auto mt-12 bg-white shadow-md rounded-xl p-6 md:p-10">
