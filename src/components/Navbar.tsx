@@ -14,8 +14,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="relative z-50">
-      <div className="flex justify-end px-6 py-4 fixed right-[0] z-2 mt-[-15px]">
+    <nav className="fixed right-[0] z-50">
+      <div className="flex justify-end px-6 py-4">
         <button
           onClick={handleClick}
           className="relative flex flex-col justify-center items-center w-10 h-10 group z-10"

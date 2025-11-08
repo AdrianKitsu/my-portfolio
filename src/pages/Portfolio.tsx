@@ -64,7 +64,7 @@ const Portfolio = () => {
   const { image, text, text2, href } = tabContent[activeTab];
 
   return (
-    <>
+    <div className="w-full space-y-8 sm:space-y-16 p-4 pb-[64px]">
       <h2 className="mb-5 text-center text-[#fcfcfc] tracking-[4px] text-[40px] sm:text-[60px]  mt-5">
         Projects I've developed
       </h2>
@@ -135,7 +135,7 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
