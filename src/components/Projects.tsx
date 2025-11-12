@@ -50,7 +50,7 @@ const Projects = () => {
   return (
     <>
       <h2 className="mb-[10px] text-[40px] sm:text-[60px] text-center text-[#fcfcfc] sm:tracking-[4px] sm:text-2xl">
-        Projects I've Worked On
+        Project Highlights
       </h2>
       <div className="panel-container grid sm:grid-cols-1 md:grid-cols-3 gap-5 sm:gap-x-10 sm:gap-y-1 justify-items-center sm:mx-auto sm:max-w-fit">
         {projectData.map((project, index) => (
