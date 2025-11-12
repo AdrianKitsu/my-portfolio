@@ -4,8 +4,8 @@ import GitHub from "../assets/images/GitHub.png";
 
 const About = () => {
   return (
-    <>
-      <h2 className="mb-5 text-center text-[#fcfcfc] tracking-[4px] text-[40px] sm:text-[60px]">
+    <div className="w-full space-y-8 sm:space-y-16 p-4 pb-[64px]">
+      <h2 className="mb-5 text-center text-[#fcfcfc] tracking-[4px] text-[40px] sm:text-[60px] mt-5 max-h-min">
         About
       </h2>
       <div className="w-[90%] mx-auto mt-12 bg-white shadow-md rounded-xl p-6 md:p-10">
@@ -17,6 +17,7 @@ const About = () => {
             <img
               className="w-[20px] h-[20px] mr-[10px] mt-[4px]"
               src={LinkedIn}
+              alt="LinkedIn Logo"
             />
             LinkedIn
           </a>
@@ -27,6 +28,7 @@ const About = () => {
             <img
               className="w-[20px] h-[20px] mr-[10px] mt-[4px]"
               src={GitHub}
+              alt="GitHub Logo"
             />
             GitHub
           </a>
@@ -61,14 +63,14 @@ const About = () => {
         </h4>
         <p className="font-urw">
           This site was developed using TypeScript, Tailwind, and ThreeJS(coming
-          soon). Other languages I've worked with include HTML5, CSS3, SCSS,
+          soon). Other languages I've worked with include HTML5, CSS, SCSS,
           JavaScript, React, Next.js, jQuery, DOM, Node.js, and PHP.
-          <br /> I'm currently learning how to use ThreeJS to further advance my
+          <br /> I'm currently learning ThreeJS and AWS to further advance my
           skillset and building interactive sites. Find my CV below!
         </p>
-        <h4 className="mt-[30px] mb-[15px]">
+        <h4 className="mt-[30px] hover:scale-[1.07] origin-left duration-500 ease-in-out">
           <a
-            className="font-caslon text-[26px] text-[#312f30] mt-[30px] mb-[15px] hover:text-[28px] hover:text-[#3b9ff0] duration-500 ease-in-out cursor-pointer"
+            className="font-caslon text-[26px] text-[#312f30] hover:text-[#3b9ff0] duration-500 ease-in-out cursor-pointer"
             href="/Adrian Borges Solari - CV.pdf"
             target="_blank"
             rel="noopener noreferrer"
@@ -77,7 +79,7 @@ const About = () => {
           </a>
         </h4>
       </div>
-    </>
+    </div>
   );
 };
 

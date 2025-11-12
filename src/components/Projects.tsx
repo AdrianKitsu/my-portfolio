@@ -5,6 +5,7 @@ import ThoughtLeadership from "../assets/images/TL.png";
 import Tempehfy from "../assets/images/tempehfy.png";
 import Mitchells from "../assets/images/mitchells.png";
 import GlossHover from "./GlossHover";
+import SRCInsurance from "../assets/images/Insurance-bnr.png";
 
 const projectData = [
   {
@@ -37,13 +38,19 @@ const projectData = [
     portfolioRedirect: "portfolio/#tab-tl",
     clientName: "RBC - Thought Leadership",
   },
+  {
+    image: SRCInsurance,
+    alt: "RBC SRC Insurance",
+    portfolioRedirect: "portfolio/#tab-src",
+    clientName: "RBC Insurance - Sales Resource Center",
+  },
 ];
 
 const Projects = () => {
   return (
     <>
       <h2 className="mb-[10px] text-[40px] sm:text-[60px] text-center text-[#fcfcfc] sm:tracking-[4px] sm:text-2xl">
-        Projects I've Worked On
+        Project Highlights
       </h2>
       <div className="panel-container grid sm:grid-cols-1 md:grid-cols-3 gap-5 sm:gap-x-10 sm:gap-y-1 justify-items-center sm:mx-auto sm:max-w-fit">
         {projectData.map((project, index) => (

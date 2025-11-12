@@ -81,7 +81,7 @@ const ClientSlider = () => {
   return (
     <>
       <h2 className="mb-5 text-center text-[#fcfcfc] text-[40px] tracking-[1px] sm:text-[60px] sm:tracking-[4px]">
-        Clients I've Worked With
+        Clients I Work With
       </h2>
       <div className="overflow-hidden w-full bg-[#fcfcfc] py-5">
         <div className="flex w-max animate-scroll gap-[35px] hover:[animation-play-state:paused]">
