@@ -74,7 +74,7 @@ const Portfolio = () => {
   return (
     <div className="w-full space-y-8 sm:space-y-16 p-4 pb-[64px]">
       <h2 className="mb-5 text-center text-[#fcfcfc] tracking-[4px] text-[40px] sm:text-[60px]  mt-5">
-        Projects I've developed
+        Project Highlights
       </h2>
       <div className="wrapper w-[90%] max-w-7xl mx-auto mt-12">
         <div className="hidden sm:flex flex-wrap justify-between border-b border-gray-300 mb-10">
