@@ -53,8 +53,8 @@ const tabContent: {
   "Sales Resource Center": {
     image: insuranceBanner,
     href: "https://www.advisor.rbcinsurance.com/en/",
-    text: `With the continued trust from our friends at RBC, I was given the opportunity to work on migrating and improving there Sales Resource Center site. The goal for this project was to add a variety of filters.`,
-    text2: `My role focused on rebuilding existing components with enhanced dynamic functionality to give content authors more flexibility, as well as developing new React-based blocks aligned to the updated design system. I also created key pages, custom templates, navigation menus, and reusable patterns to accurately reflect the original site structure while enabling a vastly improved publishing experience.`,
+    text: `With continued trust from our partners at RBC, I had the opportunity to lead the migration and enhancement of their Sales Resource Center. The project aimed to transition all forms, documents, and videos to a new hosting provider and leverage its API to build reusable components with advanced backend filtering, enabling unique, dynamic content across pages.`,
+    text2: `My role centered on auditing existing components and updating global styling to align with new brand standards. I rebuilt legacy components for better functionality and responsive design, resolved pre-existing errors, and developed new React-based blocks. My tasks involved building templates, site navigation, and reusable patterns while integrating i18n for translations. During the first 3–4 weeks, with the team lead unavailable, I took charge of creating stories, coordinating directly with clients, stakeholders, and project owners, reviewing Figma designs, planning development approaches, and recommending UX and workflow improvements.`,
   },
 };
 
