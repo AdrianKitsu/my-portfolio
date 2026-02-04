@@ -14,6 +14,8 @@ import { ReactComponent as Rbc } from "../assets/logos/rbc.svg";
 import { ReactComponent as Schneiders } from "../assets/logos/schneiders.svg";
 import { ReactComponent as Sonova } from "../assets/logos/sonova.svg";
 import { ReactComponent as Xtalks } from "../assets/logos/xtalks.svg";
+import { ReactComponent as FieldRoast } from "../assets/logos/fieldroast.svg";
+import { ReactComponent as GreenFieldMeat } from "../assets/logos/greenfieldmeat.svg";
 
 const ClientSlider = () => {
   const logos = [
@@ -75,13 +77,23 @@ const ClientSlider = () => {
       url: "https://schneiders.ca/",
     },
     { Component: Sonova, name: "Sonova", url: "https://www.sonova.com/en" },
-    { Component: Xtalks, name: "Xtalks", url: "https://xtalks.com/" },
+    {
+      Component: GreenFieldMeat,
+      name: "GreenFieldMeat",
+      url: "https://www.greenfieldmeat.com/",
+    },
+    { Component: Xtalks, name: "Xtalks", url: "https://www.xtalks.com/" },
+    {
+      Component: FieldRoast,
+      name: "FieldRoast",
+      url: "https://www.fieldroast.com/",
+    },
   ];
 
   return (
     <>
       <h2 className="mb-5 text-center text-[#fcfcfc] text-[40px] tracking-[1px] sm:text-[60px] sm:tracking-[4px]">
-        Clients I Work With
+        Clients I've Worked With
       </h2>
       <div className="overflow-hidden w-full bg-[#fcfcfc] py-5">
         <div className="flex w-max animate-scroll gap-[35px] hover:[animation-play-state:paused]">

@@ -2,6 +2,7 @@ import React from "react";
 import ClientSlider from "../components/ClientSlider";
 import Me from "../components/Me";
 import Projects from "../components/Projects";
+import PersonalProjects from "../components/PersonalProjects";
 
 const Home = () => {
   return (
