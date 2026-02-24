@@ -1,13 +1,20 @@
 import React from "react";
 import GlossHover from "./GlossHover";
 import FreeGameFinder from "../assets/images/FL.png";
+import eCommerceSite from "../assets/images/FL.png";
 
 const projectData = [
   {
     image: FreeGameFinder,
     alt: "Free Game Finder",
-    portfolioRedirect: "personal-projects/#tab-fl",
+    portfolioRedirect: "personal-projects/#tab-free-game",
     clientName: "Free Game Finder",
+  },
+  {
+    image: eCommerceSite,
+    alt: "eCommerce Site",
+    portfolioRedirect: "personal-projects/#tab-ecommerce",
+    clientName: "eCommerce Site",
   },
 ];
 

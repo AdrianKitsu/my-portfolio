@@ -37,36 +37,39 @@ const About = () => {
           Personal
         </h4>
         <p className="mb-[10px] font-urw">
-          I'm a results-driven web developer with 3 years of experience
-          designing, developing, and maintaining websites for a variety of
-          clients. I'm passionate about exploring the latest trends and enjoy
-          experimenting with new features and tools.
+          I’m a frontend and platform-focused engineer with experience building
+          and operating production web platforms for enterprise and media
+          organizations.
         </p>
         <p className="mb-[10px] font-urw">
-          I began my journey in support, where I gained a strong foundation by
-          troubleshooting front-end and server-side issues, creating new
-          components, and communicating directly with clients to clarify
-          requirements, estimate development time, and suggest improvements.
+          My work spans frontend development with React and TypeScript, as well
+          as platform responsibilities such as CMS foundations, deployment
+          workflows, site reliability, and performance. I regularly work across
+          development, staging, and production environments, ensuring features
+          ship reliably and systems remain stable at scale.
         </p>
         <p className="mb-[10px] font-urw">
-          Over time, I transitioned into project-based work, contributing to
-          sprint planning, task organization, and story point assignments. I've
-          consistently delivered on tight deadlines and played a key role in
-          several successful launches.
+          I began my career in support-oriented roles, where I developed a
+          strong foundation in troubleshooting frontend and server-side issues,
+          collaborating directly with clients, and translating requirements into
+          practical technical solutions. Over time, my role expanded into
+          project-based and platform-focused work, including sprint planning,
+          technical estimation, and ownership of production changes.
         </p>
         <p className="font-urw">
-          Beyond just building visually appealing interfaces, I'm committed to
-          crafting experiences that are intuitive and enjoyable for users.
+          I’m most effective in environments where engineers are trusted with
+          end-to-end ownership, production responsibility, and long-term system
+          health. Not just feature delivery.
         </p>
         <h4 className="font-caslon text-[26px] text-[#312f30] mt-[30px] mb-[15px]">
           About This Site
         </h4>
         <p className="font-urw">
-          This site was developed using TypeScript, Tailwind, and ThreeJS(coming
-          soon). Other languages I've worked with include HTML5, CSS, SCSS,
-          JavaScript, React, Next.js, jQuery, DOM, Node.js, and PHP.
-          <br /> I'm currently learning ThreeJS and AWS to further advance my
-          skillset and building interactive sites. Find my CV below!
+          This site was built with TypeScript and Tailwind. I’ve worked with
+          HTML5, CSS/SCSS, JavaScript, React, Next.js, Node.js, and PHP across a
+          variety of projects.
+          <br /> I’m currently learning Three.js, Framer, and AWS to build more
+          interactive and scalable web experiences. My CV is available below.
         </p>
         <h4 className="mt-[30px] hover:scale-[1.07] origin-left duration-500 ease-in-out">
           <a
