@@ -42,7 +42,7 @@ const projectData = [
     image: SRCInsurance,
     alt: "RBC SRC Insurance",
     portfolioRedirect: "portfolio/#tab-src",
-    clientName: "RBC Insurance - Sales Resource Center",
+    clientName: "RBC Insurance - Sales Resource Centre",
   },
 ];
 

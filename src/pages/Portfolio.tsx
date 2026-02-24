@@ -14,7 +14,7 @@ const tabs = [
   { label: "Lightlife", id: "tab-tempeh" },
   { label: "Grab 'N Snack", id: "tab-gns" },
   { label: "Thought Leadership", id: "tab-thought" },
-  { label: "Sales Resource Center", id: "tab-src" },
+  { label: "Sales Resource Centre", id: "tab-src" },
 ];
 
 const tabContent: {
@@ -50,10 +50,10 @@ const tabContent: {
     text: `Following the success of the initial RBC migration project, I was given the opportunity to help bring an additional two legacy sites, Thought Leadership and Climate Action Institute, into the WordPress ecosystem. With only the existing legacy sites and new design files as reference, our team worked closely with the client to define how each component should behave, providing recommendations on editing workflows, reusability, and scalability within Gutenberg.`,
     text2: `My role focused on rebuilding existing components with enhanced dynamic functionality to give content authors more flexibility, as well as developing new React-based blocks aligned to the updated design system. I also created key pages, custom templates, navigation menus, and reusable patterns to accurately reflect the original site structure while enabling a vastly improved publishing experience.`,
   },
-  "Sales Resource Center": {
+  "Sales Resource Centre": {
     image: insuranceBanner,
     href: "https://www.advisor.rbcinsurance.com/en/",
-    text: `With continued trust from our partners at RBC, I had the opportunity to lead the migration and enhancement of their Sales Resource Center. The project aimed to transition all forms, documents, and videos to a new hosting provider and leverage its API to build reusable components with advanced backend filtering, enabling unique, dynamic content across pages.`,
+    text: `With continued trust from our partners at RBC, I had the opportunity to lead the migration and enhancement of their Sales Resource Centre. The project aimed to transition all forms, documents, and videos to a new hosting provider and leverage its API to build reusable components with advanced backend filtering, enabling unique, dynamic content across pages.`,
     text2: `My role centered on auditing existing components and updating global styling to align with new brand standards. I rebuilt legacy components for better functionality and responsive design, resolved pre-existing errors, and developed new React-based blocks. My tasks involved building templates, site navigation, and reusable patterns while integrating i18n for translations. During the first 3–4 weeks, with the team lead unavailable, I took charge of creating stories, coordinating directly with clients, stakeholders, and project owners, reviewing Figma designs, planning development approaches, and recommending UX and workflow improvements.`,
   },
 };
