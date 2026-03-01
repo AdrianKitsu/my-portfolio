@@ -72,12 +72,12 @@ const Portfolio = () => {
   const { image, text, text2, href } = tabContent[activeTab];
 
   return (
-    <div className="w-full space-y-8 sm:space-y-16 p-4 pb-[64px]">
-      <h2 className="mb-5 text-center text-[#fcfcfc] tracking-[4px] text-[40px] sm:text-[60px]  mt-5">
+    <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <h2 className="text-center text-ink tracking-[0.02em] text-[34px] sm:text-[44px] mt-2">
         Project Highlights
       </h2>
-      <div className="wrapper w-[90%] max-w-7xl mx-auto mt-12">
-        <div className="hidden sm:flex flex-wrap justify-between border-b border-gray-300 mb-10">
+      <div className="wrapper mt-8">
+        <div className="hidden sm:flex flex-wrap justify-between border-b border-ink/10 mb-8">
           {tabs.map((tab) => (
             <button
               key={tab.id}
@@ -85,10 +85,10 @@ const Portfolio = () => {
                 setActiveTab(tab.label);
                 navigate(`/portfolio/#${tab.id}`);
               }}
-              className={`flex-1 text-center py-4 font-futura text-lg transition-colors duration-300 ${
+              className={`whitespace-nowrap flex-2 text-center py-4 font-futura text-lg transition-colors duration-300 ${
                 activeTab === tab.label
-                  ? "border-b-4 border-[#3b9ff0] text-[#3b9ff0] font-semibold tracking-[0.5px]"
-                  : "text-gray-500 hover:text-[white]"
+                  ? "border-b-4 border-brand text-brand font-semibold tracking-[0.5px]"
+                  : "text-ink/50 hover:text-ink"
               }`}
             >
               {tab.label}
@@ -96,8 +96,8 @@ const Portfolio = () => {
           ))}
         </div>
 
-        <div className="sm:hidden overflow-x-auto scrollbar-hide mb-10">
-          <div className="flex min-w-max border-b border-gray-300">
+        <div className="sm:hidden overflow-x-auto scrollbar-hide mb-8">
+          <div className="flex min-w-max border-b border-ink/10">
             {tabs.map((tab) => (
               <button
                 key={tab.id}
@@ -107,8 +107,8 @@ const Portfolio = () => {
                 }}
                 className={`whitespace-nowrap px-4 py-4 font-futura text-lg transition-colors duration-300 ${
                   activeTab === tab.label
-                    ? "border-b-4 border-[#3b9ff0] text-[#3b9ff0] font-semibold tracking-[0.5px]"
-                    : "text-gray-500 hover:text-[white]"
+                    ? "border-b-4 border-brand text-brand font-semibold tracking-[0.5px]"
+                    : "text-ink/50 hover:text-ink"
                 }`}
               >
                 {tab.label}
@@ -117,25 +117,26 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <div className="relative bg-white shadow-md rounded-xl p-6 md:p-10 grid md:grid-cols-2 gap-6 items-start transition-all duration-300">
+        <div className="relative bg-white border border-ink/10 shadow-sm rounded-2xl p-6 md:p-10 grid md:grid-cols-2 gap-8 items-start transition-all duration-300">
           <img
             src={image}
             alt={activeTab}
-            className="rounded-lg max-w-full shadow-sm"
+            className="rounded-xl max-w-full border border-ink/10"
           />
           <div className="flex flex-col justify-between">
-            <p className="text-[#312f30] text-[17px] leading-relaxed font-urw text-lg text-left mb-[30px]">
+            <p className="text-ink/75 text-[17px] leading-relaxed font-urw text-left mb-6">
               {text}
             </p>
             {text2 && (
-              <p className="text-[#312f30] text-[17px] leading-relaxed font-urw text-left mb-[30px]">
+              <p className="text-ink/75 text-[17px] leading-relaxed font-urw text-left mb-6">
                 {text2}
               </p>
             )}
             <a
               href={href}
-              className="flex tracking-[1.5px] text-[#312f30] font-urw text-[18px] uppercase text-sm 
-            hover:text-[#3b9ff0] font-semibold transition-all duration-500 mt-[30px] sm:mt-[0] text-nowrap"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 tracking-[0.14em] text-ink/80 font-urw uppercase text-sm hover:text-brand font-semibold transition-colors duration-200 mt-2"
             >
               Visit The Site
               <ArrowRight className="flex ml-1 h-5 w-4 text-current" />

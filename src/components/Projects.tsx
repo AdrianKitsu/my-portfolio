@@ -49,10 +49,16 @@ const projectData = [
 const Projects = () => {
   return (
     <>
-      <h2 className="mb-[10px] text-[40px] sm:text-[60px] text-center text-[#fcfcfc] sm:tracking-[4px] sm:text-2xl">
-        Project Highlights
-      </h2>
-      <div className="panel-container grid sm:grid-cols-1 md:grid-cols-3 gap-5 sm:gap-x-10 sm:gap-y-1 justify-items-center sm:mx-auto sm:max-w-fit">
+      <div className="flex items-end justify-between gap-6 flex-wrap">
+        <h2 className="mb-1 text-[34px] sm:text-[44px] text-ink tracking-[0.02em]">
+          Project Highlights
+        </h2>
+        <p className="font-urw text-[18px] text-ink/60 max-w-xxl">
+          Selected work across enterprise WordPress platforms, React components,
+          and production operations.
+        </p>
+      </div>
+      <div className="mt-6 panel-container grid lg:grid-cols-2 grid-cols-1 gap-5 sm:gap-x-8 sm:gap-y-6 justify-items-center mx-auto">
         {projectData.map((project, index) => (
           <GlossHover
             key={index}

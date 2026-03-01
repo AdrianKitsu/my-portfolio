@@ -33,7 +33,7 @@ const GlossHover = ({
       className={`flex flex-col items-center transition-transform duration-500 ease-in-out space-y-3 sm:space-y-6`}
     >
       <div>
-        <h2 className="relative left-5 top-9 text-right text-[#fcfcfc] font-bold z-20 text-shadow-xl">
+        <h2 className="relative left-5 top-9 text-right text-ink font-bold z-20">
           <sup>#</sup>
           {String(index + 1).padStart(2, "0")}
         </h2>
@@ -41,7 +41,7 @@ const GlossHover = ({
           onMouseEnter={handleEnter}
           onMouseLeave={handleLeave}
           onMouseMove={handleMouseMove}
-          className="relative group sm:w-[420px] w-full rounded-[35px] overflow-hidden hover:scale-105 transition-transform duration-500 ease-in-out cursor-pointer"
+          className="relative group sm:w-[420px] w-full rounded-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-500 ease-in-out cursor-pointer border border-ink/10 shadow-sm"
         >
           <div
             className="absolute inset-0 z-10 pointer-events-none transition-all duration-500 ease-out"
@@ -55,18 +55,18 @@ const GlossHover = ({
               <img
                 src={image}
                 alt={alt}
-                className="w-full rounded-[35px] object-cover relative z-0"
+                className="w-full object-cover relative z-0"
               />
             </a>
           ) : (
             <img
               src={image}
               alt={alt}
-              className="w-full rounded-[35px] object-cover relative z-0"
+              className="w-full object-cover relative z-0"
             />
           )}
         </div>
-        <p className="font-urw text-[#fcfcfc] uppercase text-left mt-[15px]">
+        <p className="font-urw text-ink/70 uppercase text-left mt-3 tracking-[0.10em] text-sm">
           {clientName}
         </p>
       </div>

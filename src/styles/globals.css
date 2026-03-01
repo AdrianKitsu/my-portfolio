@@ -19,19 +19,20 @@
 }
 
 body {
-  background-color: #312f30;
+  background-color: #E9F1F7;
+  color: #131B23;
   margin: 0;
 }
 
 h1 {
   font-family: "Caslon", sans-serif;
-  font-size: 64px;
+  font-size: 56px;
   font-weight: 600;
 }
 
 h2 {
   font-family: "Caslon", sans-serif;
-  font-size: 56px;
+  font-size: 44px;
   font-weight: 600;
 }
 
@@ -44,4 +45,13 @@ h3 {
 p {
   font-family: "Futura", sans-serif;
   font-size: 18px;
+}
+
+/* Better default text rendering */
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: rgba(34, 116, 165, 0.25);
 }

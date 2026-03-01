@@ -5,6 +5,13 @@ module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      colors: {
+        brand: "#2274A5",
+        ink: "#131B23",
+        surface: "#E9F1F7",
+        sand: "#E7DFC6",
+        warm: "#816C61",
+      },
       fontFamily: {
         caslon: ["Caslon", "sans-serif"],
         futura: ["Futura", "sans-serif"],

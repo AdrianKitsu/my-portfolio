@@ -9,7 +9,7 @@
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
     "cra-template-typescript": "1.2.0",
-    "framer-motion": "^12.6.3",
+    "framer-motion": "^12.34.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.1.1",
