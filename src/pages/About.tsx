@@ -37,9 +37,7 @@ const About = () => {
             GitHub
           </a>
         </div>
-        <h3 className="font-caslon text-[28px] text-ink mt-8 mb-3">
-          Personal
-        </h3>
+        <h3 className="font-caslon text-[28px] text-ink mt-8 mb-3">Personal</h3>
         <p className="mb-3 font-urw text-ink/75 leading-relaxed">
           I’m a frontend and platform-focused engineer with experience building
           and operating production web platforms for enterprise and media
@@ -69,10 +67,10 @@ const About = () => {
           About This Site
         </h3>
         <p className="font-urw text-ink/75 leading-relaxed">
-          This site was built with TypeScript and Tailwind. I’ve worked with
-          HTML5, CSS/SCSS, JavaScript, React, Next.js, Node.js, and PHP across a
-          variety of projects.
-          <br /> I’m currently learning Three.js, Framer, and AWS to build more
+          This site was built with TypeScript, Framer, and Tailwind. I’ve worked
+          with HTML5, CSS/SCSS, JavaScript, React, Next.js, Node.js, MySQL, and
+          PHP across a variety of projects.
+          <br /> I’m currently learning Three.js, and AWS to build more
           interactive and scalable web experiences. My CV is available below.
         </p>
         <div className="mt-8">
