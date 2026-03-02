@@ -33,7 +33,7 @@ const GlossHover = ({
       className={`flex flex-col items-center transition-transform duration-500 ease-in-out space-y-3 sm:space-y-6`}
     >
       <div>
-        <h2 className="relative left-5 top-9 text-right text-white [text-shadow:1px_1px_0_rgba(0,0,0,0.7)] font-semibold z-20 drop-shadow-lg">
+        <h2 className="relative left-5 top-9 text-right text-ink dark:text-white [text-shadow:2px_2px_0_rgb(233,241,247)] dark:[text-shadow:1px_1px_0_rgba(0,0,0,0.7)] font-semibold z-20 drop-shadow-lg">
           <sup>#</sup>
           {String(index + 1).padStart(2, "0")}
         </h2>
