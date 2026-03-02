@@ -128,13 +128,16 @@ export default function ClientSection() {
   });
 
   return (
-    <section ref={ref} className="w-full bg-white border-none">
+    <section
+      ref={ref}
+      className="w-full bg-white dark:bg-transparent border-none"
+    >
       <div className="mx-auto max-w-6xl px-5 md:px-8 py-14 md:py-16">
         <div className="flex flex-col gap-3 md:gap-4 text-center">
-          <h2 className="text-ink text-[30px] md:text-[42px] tracking-[0.02em] font-semibold">
+          <h2 className="text-ink dark:text-surface text-[30px] md:text-[42px] tracking-[0.02em] font-semibold">
             Clients I’ve Worked With
           </h2>
-          <p className="text-ink/70 max-w-2xl mx-auto text-[15px] md:text-[16px] leading-relaxed">
+          <p className="text-ink/70 dark:text-surface/70 max-w-2xl mx-auto text-[15px] md:text-[16px] leading-relaxed">
             Enterprise and consumer brands across finance, food, media,
             healthcare, and events.
           </p>
@@ -164,30 +167,33 @@ export default function ClientSection() {
                 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand/50
               "
             >
+              {/* hover surface */}
               <span
                 className="
-                pointer-events-none absolute inset-0
-                rounded-xl
-                bg-surface/0
-                group-hover:bg-surface/60
-                transition
-              "
+                  pointer-events-none absolute inset-0 rounded-xl transition
+                  bg-surface/0 group-hover:bg-surface/70
+                  dark:bg-surface/0 dark:group-hover:bg-surface/10
+                "
               />
+
+              {/* hover ring */}
               <span
                 className="
-                pointer-events-none absolute inset-0
-                rounded-xl
-                ring-1 ring-ink/0
-                group-hover:ring-brand/15
-                transition
-              "
+                  pointer-events-none absolute inset-0 rounded-xl transition
+                  ring-1 ring-ink/0 group-hover:ring-brand/15
+                  dark:ring-surface/0 dark:group-hover:ring-brand/25
+                "
               />
+
+              {/* logo */}
               <span className="relative">
                 <Component
                   className="
-                  h-[60px] md:h-[60px] w-auto
-                  transition
-                "
+                    h-[60px] md:h-[60px] w-auto transition
+                    opacity-90 group-hover:opacity-100
+                    dark:opacity-85 dark:group-hover:opacity-100
+                    dark:invert dark:brightness-150
+                  "
                 />
               </span>
             </motion.a>

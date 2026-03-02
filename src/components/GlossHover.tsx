@@ -68,7 +68,7 @@ const GlossHover = ({
             />
           )}
         </div>
-        <p className="font-urw text-ink/70 uppercase text-left mt-3 tracking-[0.10em] text-sm">
+        <p className="font-urw uppercase text-left mt-3 tracking-[0.10em] text-sm text-ink/70 dark:text-surface/65">
           {clientName}
         </p>
       </div>

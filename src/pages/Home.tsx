@@ -8,12 +8,12 @@ const Home = () => {
     <div className="space-y-10 sm:space-y-16">
       <Hero />
       <section className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="rounded-2xl bg-white border border-ink/10 shadow-sm p-6 sm:p-10">
+        <div className="rounded-2xl bg-white border border-ink/10 shadow-sm p-6 sm:p-10 dark:border-surface/10 dark:bg-surface/5">
           <Projects />
         </div>
       </section>
       <section className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="rounded-2xl bg-white border border-ink/10 shadow-sm overflow-hidden">
+        <div className="rounded-2xl bg-white border border-ink/10 shadow-sm overflow-hidden dark:border-surface/10 dark:bg-surface/5">
           <ClientSlider />
         </div>
       </section>

@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
+import ThemeToggle from "./ThemeToggle";
 
 type NavItem = {
   label: string;
@@ -116,6 +117,7 @@ const Navbar = () => {
                   </NavLink>
                 );
               })}
+              <ThemeToggle className="ml-2" />
             </nav>
 
             {/* Tablet/Mobile nav (<1024px) */}
@@ -201,6 +203,7 @@ const Navbar = () => {
                 </NavLink>
               );
             })}
+            <ThemeToggle className="ml-2" />
           </nav>
         </div>
       </div>
