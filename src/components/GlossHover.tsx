@@ -41,7 +41,7 @@ const GlossHover = ({
           onMouseEnter={handleEnter}
           onMouseLeave={handleLeave}
           onMouseMove={handleMouseMove}
-          className="relative group w-auto lg:w-[420px] lg:h-[305px] rounded-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-500 ease-in-out cursor-pointer border border-ink/10 shadow-sm"
+          className="relative group w-full md:w-[610px] lg:w-[420px] h-auto lg:h-[305px] rounded-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-500 ease-in-out cursor-pointer border border-ink/10 shadow-sm"
         >
           <div
             className="absolute inset-0 z-10 pointer-events-none transition-all duration-500 ease-out"
@@ -68,7 +68,7 @@ const GlossHover = ({
             />
           )}
         </div>
-        <p className="font-urw uppercase text-left mt-3 tracking-[0.10em] text-sm text-ink/70 dark:text-surface/65">
+        <p className="font-urw uppercase text-left mt-3 tracking-[0.10em] text-sm md:text-lg text-ink/70 dark:text-surface/65">
           {clientName}
         </p>
       </div>

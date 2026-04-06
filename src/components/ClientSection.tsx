@@ -137,7 +137,7 @@ export default function ClientSection() {
           <h2 className="text-ink dark:text-surface text-[30px] md:text-[42px] tracking-[0.02em] font-semibold">
             Clients I’ve Worked With
           </h2>
-          <p className="text-ink/70 dark:text-surface/70 max-w-2xl mx-auto text-[15px] md:text-[16px] leading-relaxed">
+          <p className="font-urw text-[18px] max-w-xxl text-ink/60 dark:text-surface/60 leading-relaxed">
             Enterprise and consumer brands across finance, food, media,
             healthcare, and events.
           </p>
