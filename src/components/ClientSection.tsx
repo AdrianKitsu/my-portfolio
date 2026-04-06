@@ -22,6 +22,8 @@ import { ReactComponent as Sonova } from "../assets/logos/sonova.svg";
 import { ReactComponent as Xtalks } from "../assets/logos/xtalks.svg";
 import { ReactComponent as FieldRoast } from "../assets/logos/fieldroast.svg";
 import { ReactComponent as GreenFieldMeat } from "../assets/logos/greenfieldmeat.svg";
+import { ReactComponent as StackAdapt } from "../assets/logos/stackadapt.svg";
+import { ReactComponent as Signal49 } from "../assets/logos/signal49.svg";
 
 type LogoItem = {
   Component: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
@@ -94,6 +96,16 @@ const logos: LogoItem[] = [
     Component: FieldRoast,
     name: "Field Roast",
     url: "https://www.fieldroast.com/",
+  },
+  {
+    Component: StackAdapt,
+    name: "StackAdapt",
+    url: "https://www.stackadapt.com/",
+  },
+  {
+    Component: Signal49,
+    name: "Signal49 Research",
+    url: "https://www.signal49.ca/",
   },
 ];
 
