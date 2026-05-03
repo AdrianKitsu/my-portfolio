@@ -17,8 +17,8 @@ const Hero = () => {
           </div>
 
           <h1 className="mt-5 font-caslon text-4xl sm:text-5xl leading-tight text-ink dark:text-surface">
-            Frontend and platform-focused engineer building reliable web
-            experiences.
+            Frontend engineer who architects performant web platforms for
+            enterprise clients.
           </h1>
 
           <p className="mt-4 font-urw text-lg text-ink/75 dark:text-surface/75 leading-relaxed max-w-2xl">
