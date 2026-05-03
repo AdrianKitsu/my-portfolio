@@ -63,32 +63,24 @@ const About = () => {
         </h3>
 
         <p className="mb-3 font-urw text-ink/75 dark:text-surface/75 leading-relaxed">
-          I’m a frontend and platform-focused engineer with experience building
-          and operating production web platforms for enterprise and media
-          organizations.
+          I'm a frontend-focused engineer with 3+ years building and operating
+          production web platforms for enterprise and media clients such as RBC,
+          Maple Leaf Foods, StackAdapt, and the Canadian Olympic Committee.
         </p>
 
         <p className="mb-3 font-urw text-ink/75 dark:text-surface/75 leading-relaxed">
-          My work spans frontend development with React and TypeScript, as well
-          as platform responsibilities such as CMS foundations, deployment
-          workflows, site reliability, and performance. I regularly work across
-          development, staging, and production environments, ensuring features
-          ship reliably and systems remain stable at scale.
+          My work goes beyond feature delivery. I own systems: CMS architecture,
+          deployment workflows, performance, and reliability across development,
+          staging, and production environments. I've driven frontend performance
+          improvements of up to 40%, served as the technical escalation point
+          for critical production incidents, and designed component systems
+          adopted across multiple client platforms.
         </p>
 
         <p className="mb-3 font-urw text-ink/75 dark:text-surface/75 leading-relaxed">
-          I began my career in support-oriented roles, where I developed a
-          strong foundation in troubleshooting frontend and server-side issues,
-          collaborating directly with clients, and translating requirements into
-          practical technical solutions. Over time, my role expanded into
-          project-based and platform-focused work, including sprint planning,
-          technical estimation, and ownership of production changes.
-        </p>
-
-        <p className="font-urw text-ink/75 dark:text-surface/75 leading-relaxed">
-          I’m most effective in environments where engineers are trusted with
-          end-to-end ownership, production responsibility, and long-term system
-          health. Not just feature delivery.
+          I work best in environments where engineers are trusted with real
+          ownership, client relations, and production responsibility. Not just
+          tickets.
         </p>
 
         <h3 className="font-caslon text-[28px] text-ink dark:text-surface mt-8 mb-3">
@@ -96,12 +88,13 @@ const About = () => {
         </h3>
 
         <p className="font-urw text-ink/75 dark:text-surface/75 leading-relaxed">
-          This site was built with TypeScript, Framer, and Tailwind. I’ve worked
-          with HTML5, CSS/SCSS, JavaScript, React, Next.js, Node.js, MySQL, and
-          PHP across a variety of projects.
+          Built with Next.js, TypeScript, and Tailwind. My broader stack
+          includes React, PHP, Node.js, MySQL, GraphQL, and REST APIs. I'm
+          currently expanding into Three.js for interactive experiences and AWS
+          for cloud architecture.
           <br />
-          <br /> I’m currently learning Three.js, and AWS to build more
-          interactive and scalable web experiences. My CV is available below.
+          <br />
+          My CV is available below.
         </p>
 
         <div className="mt-8">
