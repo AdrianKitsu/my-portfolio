@@ -40,8 +40,8 @@ const tabContent: {
   },
   "Grab 'N Snack": {
     image: grabnsnackBanner,
-    href: "https://www.grabnsnack.ca/",
-    text: `Similar to the Mitchell’s Foods project, Grab ’N Snack was a full-site rebrand focused on modernizing the visual identity. While only a few new components were introduced, the core of the work involved global styling updates, layout refinements, and re-styling inherited components from the parent theme to ensure consistency with the refreshed brand direction. This included improving responsiveness, aligning typography and color usage, and resolving UI inconsistencies across templates and page types.`,
+    href: "https://web.archive.org/web/20250323221342/https://www.grabnsnack.ca/",
+    text: `Similar to the Mitchell’s Foods project, Grab ’N Snack was a full-site rebrand focused on modernizing the visual identity. While only a few new components were introduced, the core of the work involved global styling updates, layout refinements, and re-styling inherited components from the parent theme to ensure consistency with the refreshed brand direction. This included improving responsiveness, aligning typography and color usage, and resolving UI inconsistencies across templates and page types. Unfortunately, the site has since been archived by the client.`,
     text2: ``,
   },
   "Thought Leadership": {
