@@ -22,7 +22,7 @@ const App = () => {
                 Adrian Borges
               </p>
               <p className="font-urw text-sm text-ink/60 dark:text-surface/60">
-                Frontend / Platform Engineer · Montreal
+                Full-Stack / Platform Engineer · Montreal
               </p>
             </div>
 

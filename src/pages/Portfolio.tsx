@@ -56,6 +56,13 @@ const tabContent: {
     text: `With continued trust from our partners at RBC, I had the opportunity to lead the migration and enhancement of their Sales Resource Centre. The project aimed to transition all forms, documents, and videos to a new hosting provider and leverage its API to build reusable components with advanced backend filtering, enabling unique, dynamic content across pages.`,
     text2: `My role centered on auditing existing components and updating global styling to align with new brand standards. I rebuilt legacy components for better functionality and responsive design, resolved pre-existing errors, and developed new React-based blocks. My tasks involved building templates, site navigation, and reusable patterns while integrating i18n for translations. During the first 3–4 weeks, with the team lead unavailable, I took charge of creating stories, coordinating directly with clients, stakeholders, and project owners, reviewing Figma designs, planning development approaches, and recommending UX and workflow improvements.`,
   },
+  "Sales Resource Centre: Phase 2": {
+    image: insuranceBanner,
+    href: "https://www.advisor.rbcinsurance.com/en/",
+    text: `After a successful launch of the site, we were entrusted with the remaining phase of updates they wanted to make. The focus of the updates were improving and expanding upon the existing search, sort, filter, and Bynder API functionalities`,
+    text2: `I was the sole engineer on this project and managed a majority of the client facing updates, ticket creations, scrums, and presentations. The largest and most difficult part of this project was going through code a different engineer had created while also not being able to work with this engineer as they were no longer a part of the team. adding the popularity sort dropdown and the asset linking of Bynder files for related but different language files coming from the API. There were several limitations regarding the API call, as they were not subscribed to the Bynder enhanced digital experience package. I had to review documentation and find work-arounds for the asks.`,
+    text3: `This was an oportunity for me to step up when it came to researching and recommending solutions to the blockers we faced. With a combination of custom meta properties I was able to create solutions, meet every deadline, and `,
+  },
 };
 
 const Portfolio = () => {

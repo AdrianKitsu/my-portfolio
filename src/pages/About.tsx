@@ -63,7 +63,7 @@ const About = () => {
         </h3>
 
         <p className="mb-3 font-urw text-ink/75 dark:text-surface/75 leading-relaxed">
-          I'm a frontend-focused engineer with 3+ years building and operating
+          I'm a full-stack engineer with 4+ years building and operating
           production web platforms for enterprise and media clients such as RBC,
           Maple Leaf Foods, StackAdapt, and the Canadian Olympic Committee.
         </p>
