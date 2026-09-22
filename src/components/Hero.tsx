@@ -22,9 +22,10 @@ const Hero = () => {
           </h1>
 
           <p className="mt-4 font-urw text-lg text-ink/75 dark:text-surface/75 leading-relaxed max-w-2xl">
-            I build and operate production WordPress and React platforms for
-            enterprise teams. Shipping features fast while keeping performance,
-            stability, and workflows clean.
+            I build and operate full-stack web platforms for enterprise teams,
+            working across TypeScript, React, WordPress, and server-side systems.
+            I ship features with a focus on performance, reliability, and
+            maintainable code.
           </p>
 
           <div className="mt-7 flex flex-col sm:flex-row gap-3">

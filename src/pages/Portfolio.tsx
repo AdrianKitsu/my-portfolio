@@ -15,6 +15,7 @@ const tabs = [
   { label: "Grab 'N Snack", id: "tab-gns" },
   { label: "Thought Leadership", id: "tab-thought" },
   { label: "Sales Resource Centre", id: "tab-src" },
+  { label: "Sales Resource Centre: Phase 2", id: "tab-src-2" },
 ];
 
 const tabContent: {
@@ -71,9 +72,9 @@ const tabContent: {
   "Sales Resource Centre: Phase 2": {
     image: insuranceBanner,
     href: "https://www.advisor.rbcinsurance.com/en/",
-    text: `After a successful launch of the site, we were entrusted with the remaining phase of updates they wanted to make. The focus of the updates were improving and expanding upon the existing search, sort, filter, and Bynder API functionalities`,
-    text2: `I was the sole engineer on this project and managed a majority of the client facing updates, ticket creations, scrums, and presentations. The largest and most difficult part of this project was going through code a different engineer had created while also not being able to work with this engineer as they were no longer a part of the team. adding the popularity sort dropdown and the asset linking of Bynder files for related but different language files coming from the API. There were several limitations regarding the API call, as they were not subscribed to the Bynder enhanced digital experience package. I had to review documentation and find work-arounds for the asks.`,
-    text3: `This was an oportunity for me to step up when it came to researching and recommending solutions to the blockers we faced. With a combination of custom meta properties I was able to create solutions, meet every deadline, and `,
+    text: `Following the successful site launch, I took ownership of the next phase of improvements as the sole engineer. The work focused on expanding search, sorting, filtering, and the Bynder API integration. I inherited another developer's codebase and had to understand and extend it independently, as the original developer was no longer on the team.`,
+    text2: `I researched technical blockers, recommended solutions, and implemented the improvements, including a popularity sort dropdown and links between related Bynder assets in different languages. The client's existing Bynder subscription limited the available API capabilities, so I reviewed the documentation and developed workarounds using custom metadata properties to deliver the requested functionality within those constraints with limited impact on performance.`,
+    text3: `Alongside development, I managed the majority of client coordination and day-to-day delivery: creating tickets, scheduling meetings, running scrums, presenting demos, and sharing progress updates. I carried the work from investigation and planning through implementation and client presentations, meeting every deadline while keeping stakeholders informed of progress, blockers, and proposed solutions.`,
   },
 };
 
