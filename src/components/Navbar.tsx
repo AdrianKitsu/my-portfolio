@@ -84,7 +84,7 @@ const Navbar = () => {
                 Adrian Borges
               </span>
               <span className="hidden sm:inline font-urw text-xs tracking-[0.18em] uppercase text-surface/70">
-                Frontend / Platform Engineer
+                Full-stack / Platform Engineer
               </span>
             </NavLink>
 

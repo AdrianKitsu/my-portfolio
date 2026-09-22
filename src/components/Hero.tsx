@@ -17,7 +17,7 @@ const Hero = () => {
           </div>
 
           <h1 className="mt-5 font-caslon text-4xl sm:text-5xl leading-tight text-ink dark:text-surface">
-            Frontend engineer who architects performant web platforms for
+            Full-stack engineer who architects performant web platforms for
             enterprise clients.
           </h1>
 
