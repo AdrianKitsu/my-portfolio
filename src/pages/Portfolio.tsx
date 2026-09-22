@@ -18,7 +18,13 @@ const tabs = [
 ];
 
 const tabContent: {
-  [key: string]: { image: string; text: string; text2: string; text3: string href: string };
+  [key: string]: {
+    image: string;
+    text: string;
+    text2: string;
+    text3: string;
+    href: string;
+  };
 } = {
   "Future Launch": {
     image: futureBanner,
