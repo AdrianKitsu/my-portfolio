@@ -6,7 +6,7 @@ import Tempehfy from "../assets/images/tempehfy.png";
 import Mitchells from "../assets/images/mitchells.png";
 import GlossHover from "./GlossHover";
 import SRCInsurance from "../assets/images/Insurance-bnr.png";
-import VisualArts from "../assets/images/visual-arts-center.png";
+import VisualArts from "../assets/images/visual-arts-centre.png";
 
 const projectData = [
   {

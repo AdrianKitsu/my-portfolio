@@ -6,6 +6,7 @@ import tempehfyBanner from "../assets/images/tempehfy-cell.png";
 import futureBanner from "../assets/images/FL-desktop.png";
 import thoughtBanner from "../assets/images/TL-phonepng.png";
 import insuranceBanner from "../assets/images/SRC-laptoppng.png";
+import VisualArts from "../assets/images/visual-arts-centre.png";
 import { ReactComponent as ArrowRight } from "../assets/images/ui/arrow-right.svg";
 
 const tabs = [
@@ -16,6 +17,7 @@ const tabs = [
   { label: "Thought Leadership", id: "tab-thought" },
   { label: "Sales Resource Centre", id: "tab-src" },
   { label: "Sales Resource Centre: Phase 2", id: "tab-src-2" },
+  { label: "Visual Arts Centre", id: "tab-vac" },
 ];
 
 const tabContent: {
@@ -76,6 +78,13 @@ const tabContent: {
     text2: `I researched technical blockers, recommended solutions, and implemented the improvements, including a popularity sort dropdown and links between related Bynder assets in different languages. The client's existing Bynder subscription limited the available API capabilities, so I reviewed the documentation and developed workarounds using custom metadata properties to deliver the requested functionality within those constraints with limited impact on performance.`,
     text3: `Alongside development, I managed the majority of client coordination and day-to-day delivery: creating tickets, scheduling meetings, running scrums, presenting demos, and sharing progress updates. I carried the work from investigation and planning through implementation and client presentations, meeting every deadline while keeping stakeholders informed of progress, blockers, and proposed solutions.`,
   },
+  "Visual Arts Centre": {
+    image: VisualArts,
+    href: "https://visualartscentre.ca/",
+    text: `The Visual Arts Centre needed a dedicated registration platform to bring its camps into one centralized experience, with future course offerings in mind. Built around WooCommerce and an event ticketing plugin, the site allows parents to explore camps and purchase places for their children. I owned key parts of the registration experience, spanning visual styling, ticket selection, checkout, and sold-out handling.`,
+    text2: `I implemented the approved design direction into the site's styling and refined the ticket selection and checkout flows to support camp registration. My work connected the visual experience with the purchasing functionality, giving families a consistent path from choosing tickets to completing checkout.`,
+    text3: `I also implemented the out-of-stock logic governing how unavailable camp tickets are presented and handled during registration. This work addressed a critical part of the booking experience: making availability clear and preventing users from proceeding with sold-out selections. My contribution combined design implementation with the commerce logic behind the registration.`,
+  },
 };
 
 const Portfolio = () => {
@@ -96,7 +105,7 @@ const Portfolio = () => {
     if (matched) setActiveTab(matched.label);
   }, [location.hash]);
 
-  const { image, text, text2, href } = tabContent[activeTab];
+  const { image, text, text2, text3, href } = tabContent[activeTab];
 
   const headingClass =
     "text-center tracking-[0.02em] text-[34px] sm:text-[44px] mt-2 text-ink dark:text-surface";
@@ -124,9 +133,15 @@ const Portfolio = () => {
                 <button
                   key={direction}
                   type="button"
-                  aria-label={direction < 0 ? "Previous project" : "Next project"}
+                  aria-label={
+                    direction < 0 ? "Previous project" : "Next project"
+                  }
                   aria-controls="project-panel"
-                  disabled={direction < 0 ? activeIndex === 0 : activeIndex === tabs.length - 1}
+                  disabled={
+                    direction < 0
+                      ? activeIndex === 0
+                      : activeIndex === tabs.length - 1
+                  }
                   onClick={() => selectProject(activeIndex + direction)}
                   className="flex h-11 w-11 items-center justify-center rounded-full border border-ink/15 text-ink transition-colors hover:bg-ink/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand disabled:cursor-default disabled:opacity-30 dark:border-surface/20 dark:text-surface dark:hover:bg-surface/10"
                 >
@@ -162,6 +177,12 @@ const Portfolio = () => {
             {text2 && (
               <p className="text-ink/75 dark:text-surface/75 text-[17px] leading-relaxed font-urw text-left mb-6">
                 {text2}
+              </p>
+            )}
+
+            {text3 && (
+              <p className="text-ink/75 dark:text-surface/75 text-[17px] leading-relaxed font-urw text-left mb-6">
+                {text3}
               </p>
             )}
 
