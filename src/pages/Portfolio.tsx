@@ -82,7 +82,14 @@ const Portfolio = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState(tabs[0].label);
+  const activeIndex = tabs.findIndex((tab) => tab.label === activeTab);
 
+  const selectProject = (index: number) => {
+    const tab = tabs[index];
+    if (!tab) return;
+    setActiveTab(tab.label);
+    navigate(`/portfolio/#${tab.id}`);
+  };
   useEffect(() => {
     const hash = location.hash.replace("#", "");
     const matched = tabs.find((tab) => tab.id === hash);
@@ -94,64 +101,52 @@ const Portfolio = () => {
   const headingClass =
     "text-center tracking-[0.02em] text-[34px] sm:text-[44px] mt-2 text-ink dark:text-surface";
 
-  const tabRowClass = "border-b border-ink/10 dark:border-surface/10";
-
-  const tabBase =
-    "whitespace-nowrap px-4 py-4 font-futura text-lg transition-colors duration-300";
-
-  const tabActive =
-    "border-b-4 border-brand text-brand font-semibold tracking-[0.5px]";
-
-  const tabInactive =
-    "text-ink/50 dark:text-surface/55 hover:text-ink dark:hover:text-surface";
-
   return (
     <div className="mx-auto max-w-6xl px-4 sm:px-6">
       <h2 className={headingClass}>Project Highlights</h2>
 
       <div className="wrapper mt-8">
-        {/* Desktop tabs */}
-        <div
-          className={`hidden sm:flex flex-wrap justify-between mb-8 ${tabRowClass}`}
-        >
-          {tabs.map((tab) => (
-            <button
-              key={tab.id}
-              onClick={() => {
-                setActiveTab(tab.label);
-                navigate(`/portfolio/#${tab.id}`);
-              }}
-              className={`${tabBase} ${
-                activeTab === tab.label ? tabActive : tabInactive
-              }`}
-            >
-              {tab.label}
-            </button>
-          ))}
-        </div>
+        <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <h3
+            id="project-title"
+            aria-live="polite"
+            className="font-caslon text-2xl text-ink dark:text-surface"
+          >
+            {activeTab}
+          </h3>
 
-        {/* Mobile tabs */}
-        <div className="sm:hidden overflow-x-auto scrollbar-none mb-8">
-          <div className={`flex min-w-max ${tabRowClass}`}>
-            {tabs.map((tab) => (
-              <button
-                key={tab.id}
-                onClick={() => {
-                  setActiveTab(tab.label);
-                  navigate(`/portfolio/#${tab.id}`);
-                }}
-                className={`${tabBase} ${
-                  activeTab === tab.label ? tabActive : tabInactive
-                }`}
-              >
-                {tab.label}
-              </button>
-            ))}
+          <div className="flex items-center justify-between gap-4 sm:justify-end">
+            <span className="font-urw text-sm tabular-nums text-ink/60 dark:text-surface/60">
+              {activeIndex + 1} / {tabs.length}
+            </span>
+            <div className="flex gap-2">
+              {[-1, 1].map((direction) => (
+                <button
+                  key={direction}
+                  type="button"
+                  aria-label={direction < 0 ? "Previous project" : "Next project"}
+                  aria-controls="project-panel"
+                  disabled={direction < 0 ? activeIndex === 0 : activeIndex === tabs.length - 1}
+                  onClick={() => selectProject(activeIndex + direction)}
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-ink/15 text-ink transition-colors hover:bg-ink/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand disabled:cursor-default disabled:opacity-30 dark:border-surface/20 dark:text-surface dark:hover:bg-surface/10"
+                >
+                  <ArrowRight
+                    aria-hidden="true"
+                    className={`h-5 w-4 ${direction < 0 ? "rotate-180" : ""}`}
+                  />
+                </button>
+              ))}
+            </div>
           </div>
         </div>
-
         {/* Content panel */}
-        <div className="relative bg-white dark:bg-surface/5 border border-ink/10 dark:border-surface/10 shadow-sm rounded-2xl p-6 md:p-10 grid md:grid-cols-2 gap-8 items-start transition-all duration-300">
+        <div
+          id="project-panel"
+          role="region"
+          aria-labelledby="project-title"
+          tabIndex={0}
+          className="relative bg-white dark:bg-surface/5 border border-ink/10 dark:border-surface/10 shadow-sm rounded-2xl p-6 md:p-10 grid md:grid-cols-2 gap-8 items-start transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
+        >
           <img
             src={image}
             alt={activeTab}

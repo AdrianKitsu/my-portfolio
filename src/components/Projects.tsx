@@ -6,6 +6,7 @@ import Tempehfy from "../assets/images/tempehfy.png";
 import Mitchells from "../assets/images/mitchells.png";
 import GlossHover from "./GlossHover";
 import SRCInsurance from "../assets/images/Insurance-bnr.png";
+import VisualArts from "../assets/images/visual-arts-center.png";
 
 const projectData = [
   {
@@ -43,6 +44,18 @@ const projectData = [
     alt: "RBC SRC Insurance",
     portfolioRedirect: "portfolio/#tab-src",
     clientName: "RBC Insurance - Sales Resource Centre",
+  },
+  {
+    image: SRCInsurance,
+    alt: "RBC SRC Insurance",
+    portfolioRedirect: "portfolio/#tab-src-2",
+    clientName: "RBC Insurance - Sales Resource Centre: Phase 2",
+  },
+  {
+    image: VisualArts,
+    alt: "Visual Arts Centre",
+    portfolioRedirect: "portfolio/#tab-vac",
+    clientName: "Visual Arts Centre",
   },
 ];
 
