@@ -4,8 +4,11 @@ import AppRoutes from "./routes/AppRoutes";
 import Navbar from "./components/Navbar";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Analytics } from "@vercel/analytics/react";
+import { useLanguage } from "./i18n/LanguageContext";
 
 const App = () => {
+  const { t } = useLanguage();
+
   return (
     <Router>
       <div className="min-h-screen bg-surface text-ink dark:bg-ink dark:text-surface">
@@ -22,7 +25,7 @@ const App = () => {
                 Adrian Borges
               </p>
               <p className="font-urw text-sm text-ink/60 dark:text-surface/60">
-                Full-Stack / Platform Engineer · Montreal
+                {t.footer.role}
               </p>
             </div>
 

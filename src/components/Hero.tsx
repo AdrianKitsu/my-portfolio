@@ -1,7 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { useLanguage } from "../i18n/LanguageContext";
+
+const strengthDotClasses = ["bg-brand", "bg-warm", "bg-ink dark:bg-surface"];
 
 const Hero = () => {
+  const { t } = useLanguage();
+  const { openTo } = t.hero;
+  const roleClass = "text-ink dark:text-surface";
+
   return (
     <section className="mx-auto max-w-6xl px-4 sm:px-6">
       <div className="grid lg:grid-cols-12 gap-6 items-start">
@@ -11,38 +18,34 @@ const Hero = () => {
               className="h-2 w-2 rounded-full bg-brand"
               aria-hidden="true"
             />
-            <span className="font-urw text-xs tracking-[0.16em] uppercase text-ink/70 dark:text-surface/70">
-              Based in Montreal · Available for contract & full-time
+            <span className="font-urw text-xs tracking-[0.16em] uppercase text-ink/70 dark:text-surface/70 fr:tracking-[0.08em]">
+              {t.hero.badge}
             </span>
           </div>
 
           <h1 className="mt-5 font-caslon text-4xl sm:text-5xl leading-tight text-ink dark:text-surface">
-            Full-stack engineer who architects performant web platforms for
-            enterprise clients.
+            {t.hero.heading}
           </h1>
 
           <p className="mt-4 font-urw text-lg text-ink/75 dark:text-surface/75 leading-relaxed max-w-2xl">
-            I build and operate full-stack web platforms for enterprise teams,
-            working across TypeScript, React, WordPress, and server-side systems.
-            I ship features with a focus on performance, reliability, and
-            maintainable code.
+            {t.hero.intro}
           </p>
 
           <div className="mt-7 flex flex-col sm:flex-row gap-3">
             <NavLink
               to="/portfolio"
-              className="inline-flex items-center justify-center rounded-lg bg-brand px-5 py-3 font-urw text-sm tracking-[0.14em] uppercase text-surface hover:brightness-110 transition"
+              className="inline-flex items-center justify-center whitespace-nowrap rounded-lg bg-brand px-5 py-3 font-urw text-sm tracking-[0.14em] uppercase text-surface hover:brightness-110 transition fr:tracking-[0.08em]"
             >
-              View work
+              {t.hero.viewWork}
             </NavLink>
 
             <a
               href="/Adrian Borges Solari - CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-lg bg-ink px-5 py-3 font-urw text-sm tracking-[0.14em] uppercase text-surface hover:brightness-110 transition dark:bg-surface dark:text-ink"
+              className="inline-flex items-center justify-center whitespace-nowrap rounded-lg bg-ink px-5 py-3 font-urw text-sm tracking-[0.14em] uppercase text-surface hover:brightness-110 transition dark:bg-surface dark:text-ink fr:tracking-[0.08em]"
             >
-              Download CV
+              {t.hero.downloadCv}
             </a>
           </div>
         </div>
@@ -51,69 +54,37 @@ const Hero = () => {
           <div className="rounded-2xl bg-white dark:bg-surface/5 border border-ink/10 dark:border-surface/10 shadow-sm overflow-hidden">
             <div className="p-5">
               <p className="font-urw text-xs tracking-[0.16em] uppercase text-ink/60 dark:text-surface/60">
-                Core strengths
+                {t.hero.coreStrengths}
               </p>
 
               <ul className="mt-4 space-y-3">
-                <li className="flex gap-3">
-                  <span
-                    className="mt-2 h-2 w-2 rounded-full bg-brand"
-                    aria-hidden="true"
-                  />
-                  <div>
-                    <p className="font-urw text-sm tracking-[0.06em] uppercase text-ink dark:text-surface">
-                      React + TypeScript
-                    </p>
-                    <p className="font-urw text-sm text-ink/70 dark:text-surface/70">
-                      Gutenberg blocks, UI systems, component libraries.
-                    </p>
-                  </div>
-                </li>
-
-                <li className="flex gap-3">
-                  <span
-                    className="mt-2 h-2 w-2 rounded-full bg-warm"
-                    aria-hidden="true"
-                  />
-                  <div>
-                    <p className="font-urw text-sm tracking-[0.06em] uppercase text-ink dark:text-surface">
-                      WordPress VIP / Ops
-                    </p>
-                    <p className="font-urw text-sm text-ink/70 dark:text-surface/70">
-                      Deployments, performance, reliability, multi-site
-                      governance.
-                    </p>
-                  </div>
-                </li>
-
-                <li className="flex gap-3">
-                  <span
-                    className="mt-2 h-2 w-2 rounded-full bg-ink dark:bg-surface"
-                    aria-hidden="true"
-                  />
-                  <div>
-                    <p className="font-urw text-sm tracking-[0.06em] uppercase text-ink dark:text-surface">
-                      Enterprise delivery
-                    </p>
-                    <p className="font-urw text-sm text-ink/70 dark:text-surface/70">
-                      Workflow-first solutions: patterns, templates, authoring
-                      UX.
-                    </p>
-                  </div>
-                </li>
+                {t.hero.strengths.map((strength, index) => (
+                  <li key={strength.title} className="flex gap-3">
+                    <span
+                      className={`mt-2 h-2 w-2 rounded-full ${strengthDotClasses[index]}`}
+                      aria-hidden="true"
+                    />
+                    <div>
+                      <p className="font-urw text-sm tracking-[0.06em] uppercase text-ink dark:text-surface">
+                        {strength.title}
+                      </p>
+                      <p className="font-urw text-sm text-ink/70 dark:text-surface/70">
+                        {strength.description}
+                      </p>
+                    </div>
+                  </li>
+                ))}
               </ul>
             </div>
 
             <div className="bg-sand/60 dark:bg-surface/10 border-t border-ink/10 dark:border-surface/10 p-5">
               <p className="font-urw text-sm text-ink/70 dark:text-surface/70">
-                Open to:{" "}
-                <span className="text-ink dark:text-surface">frontend</span>,{" "}
-                <span className="text-ink dark:text-surface">platform</span>,
-                and{" "}
-                <span className="text-ink dark:text-surface">
-                  web operations
-                </span>{" "}
-                roles.
+                {openTo.label}{" "}
+                <span className={roleClass}>{openTo.roles[0]}</span>,{" "}
+                <span className={roleClass}>{openTo.roles[1]}</span>
+                {openTo.and}{" "}
+                <span className={roleClass}>{openTo.roles[2]}</span>
+                {openTo.suffix}
               </p>
             </div>
           </div>

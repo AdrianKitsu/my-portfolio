@@ -1,4 +1,5 @@
 import React from "react";
+import { useLanguage } from "../i18n/LanguageContext";
 
 const GitHubIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -29,10 +30,12 @@ const LinkedInIcon = (props: React.SVGProps<SVGSVGElement>) => (
 );
 
 const About = () => {
+  const { t } = useLanguage();
+
   return (
     <div className="mx-auto max-w-6xl px-4 sm:px-6">
       <h2 className="text-center tracking-[0.02em] text-[34px] sm:text-[44px] mt-2 text-ink dark:text-surface">
-        About
+        {t.about.heading}
       </h2>
 
       <div className="mt-8 bg-white dark:bg-surface/5 border border-ink/10 dark:border-surface/10 shadow-sm rounded-2xl p-6 md:p-10">
@@ -59,52 +62,37 @@ const About = () => {
         </div>
 
         <h3 className="font-caslon text-[28px] text-ink dark:text-surface mt-8 mb-3">
-          Personal
+          {t.about.personalHeading}
         </h3>
 
-        <p className="mb-3 font-urw text-ink/75 dark:text-surface/75 leading-relaxed">
-          I'm a full-stack engineer with 4+ years building and operating
-          production web platforms for enterprise and media clients such as RBC,
-          Maple Leaf Foods, StackAdapt, and the Canadian Olympic Committee.
-        </p>
-
-        <p className="mb-3 font-urw text-ink/75 dark:text-surface/75 leading-relaxed">
-          My work goes beyond feature delivery. I own systems: CMS architecture,
-          deployment workflows, performance, and reliability across development,
-          staging, and production environments. I've driven frontend performance
-          improvements of up to 40%, served as the technical escalation point
-          for critical production incidents, and designed component systems
-          adopted across multiple client platforms.
-        </p>
-
-        <p className="mb-3 font-urw text-ink/75 dark:text-surface/75 leading-relaxed">
-          I work best in environments where engineers are trusted with real
-          ownership, client relations, and production responsibility. Not just
-          tickets.
-        </p>
+        {t.about.personal.map((paragraph) => (
+          <p
+            key={paragraph}
+            className="mb-3 font-urw text-ink/75 dark:text-surface/75 leading-relaxed"
+          >
+            {paragraph}
+          </p>
+        ))}
 
         <h3 className="font-caslon text-[28px] text-ink dark:text-surface mt-8 mb-3">
-          About This Site
+          {t.about.siteHeading}
         </h3>
 
         <p className="font-urw text-ink/75 dark:text-surface/75 leading-relaxed">
-          Built with Next.js, TypeScript, and Tailwind. My broader stack
-          includes React, PHP, Node.js, MySQL, GraphQL, and REST APIs. I'm
-          currently expanding into Three.js for interactive experiences and AWS
-          for cloud architecture.
+          {t.about.site}
           <br />
           <br />
-          My CV is available below.
+          {t.about.cvNote}
         </p>
 
         <div className="mt-8">
           <a
-            className="inline-flex items-center justify-center rounded-lg bg-ink px-5 py-3 font-urw text-sm tracking-[0.14em] uppercase text-surface hover:brightness-110 transition dark:bg-surface dark:text-ink"
+            className="inline-flex items-center justify-center whitespace-nowrap rounded-lg bg-ink px-5 py-3 font-urw text-sm tracking-[0.14em] fr:tracking-[0.08em] uppercase text-surface hover:brightness-110 transition dark:bg-surface dark:text-ink"
             href="/Adrian Borges Solari - CV.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Download CV
+            {t.about.downloadCv}
           </a>
         </div>
       </div>

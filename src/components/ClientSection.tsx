@@ -24,6 +24,7 @@ import { ReactComponent as FieldRoast } from "../assets/logos/fieldroast.svg";
 import { ReactComponent as GreenFieldMeat } from "../assets/logos/greenfieldmeat.svg";
 import { ReactComponent as StackAdapt } from "../assets/logos/stackadapt.svg";
 import { ReactComponent as Signal49 } from "../assets/logos/signal49.svg";
+import { useLanguage } from "../i18n/LanguageContext";
 
 type LogoItem = {
   Component: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
@@ -132,6 +133,7 @@ const itemVariants: Variants = {
 };
 
 export default function ClientSection() {
+  const { t } = useLanguage();
   const reduceMotion = useReducedMotion();
   const ref = useRef<HTMLElement | null>(null);
   const inView = useInView(ref, {
@@ -147,11 +149,10 @@ export default function ClientSection() {
       <div className="mx-auto max-w-6xl px-5 md:px-8 py-14 md:py-16">
         <div className="flex flex-col gap-3 md:gap-4 text-center">
           <h2 className="text-ink dark:text-surface text-[30px] md:text-[42px] tracking-[0.02em] font-semibold">
-            Clients I’ve Worked With
+            {t.clients.heading}
           </h2>
           <p className="font-urw text-[18px] max-w-xxl text-ink/60 dark:text-surface/60 leading-relaxed">
-            Enterprise and consumer brands across finance, food, media,
-            healthcare, and events.
+            {t.clients.intro}
           </p>
         </div>
 

@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const textshadow = require("tailwindcss-textshadow");
+const plugin = require("tailwindcss/plugin");
 
 module.exports = {
   darkMode: "class",
@@ -38,5 +39,12 @@ module.exports = {
       },
     },
   },
-  plugins: [textshadow],
+  plugins: [
+    textshadow,
+    // `fr:` variant — applies when the page (or element) language is French,
+    // e.g. `tracking-[0.12em] fr:tracking-[0.06em]`. Driven by <html lang>.
+    plugin(({ addVariant }) => {
+      addVariant("fr", "&:lang(fr)");
+    }),
+  ],
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useTheme } from "../hooks/useTheme";
+import { useLanguage } from "../i18n/LanguageContext";
 
 type Props = {
   className?: string;
@@ -22,16 +23,17 @@ const iconVariants = {
 
 export default function ThemeToggle({ className = "" }: Props) {
   const { theme, toggleTheme } = useTheme();
+  const { t } = useLanguage();
   const isDark = theme === "dark";
 
   return (
     <button
       type="button"
       onClick={toggleTheme}
-      aria-label="Toggle theme"
-      title={isDark ? "Switch to light" : "Switch to dark"}
+      aria-label={t.theme.toggle}
+      title={isDark ? t.theme.toLight : t.theme.toDark}
       className={[
-        "relative inline-flex items-center justify-center",
+        "relative inline-flex shrink-0 items-center justify-center",
         "h-10 w-10 rounded-full",
         "border border-ink/10 dark:border-surface/15",
         "bg-white/70 dark:bg-ink/50 backdrop-blur",

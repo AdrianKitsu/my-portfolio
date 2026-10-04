@@ -7,80 +7,43 @@ import Mitchells from "../assets/images/mitchells.png";
 import GlossHover from "./GlossHover";
 import SRCInsurance from "../assets/images/Insurance-bnr.png";
 import VisualArts from "../assets/images/visual-arts-centre.png";
+import { useLanguage } from "../i18n/LanguageContext";
+import type { ProjectId } from "../i18n/en";
 
-const projectData = [
-  {
-    image: FutureLaunch,
-    alt: "Future Launch",
-    portfolioRedirect: "portfolio/#tab-fl",
-    clientName: "RBC - Future Launch",
-  },
-  {
-    image: Mitchells,
-    alt: "Mitchells",
-    portfolioRedirect: "portfolio/#tab-mitch",
-    clientName: "Mitchell's Food",
-  },
-  {
-    image: Tempehfy,
-    alt: "Tempehfy",
-    portfolioRedirect: "portfolio/#tab-tempeh",
-    clientName: "Lightlife",
-  },
-  {
-    image: Gns,
-    alt: "Grab n Snack",
-    portfolioRedirect: "portfolio/#tab-gns",
-    clientName: "Grab 'N Snack",
-  },
-  {
-    image: ThoughtLeadership,
-    alt: "Thought Leadership",
-    portfolioRedirect: "portfolio/#tab-tl",
-    clientName: "RBC - Thought Leadership",
-  },
-  {
-    image: SRCInsurance,
-    alt: "RBC SRC Insurance",
-    portfolioRedirect: "portfolio/#tab-src",
-    clientName: "RBC Insurance - Sales Resource Centre",
-  },
-  {
-    image: SRCInsurance,
-    alt: "RBC SRC Insurance",
-    portfolioRedirect: "portfolio/#tab-src-2",
-    clientName: "RBC Insurance - Sales Resource Centre: Phase 2",
-  },
-  {
-    image: VisualArts,
-    alt: "Visual Arts Centre",
-    portfolioRedirect: "portfolio/#tab-vac",
-    clientName: "Visual Arts Centre",
-  },
+const projectData: { id: ProjectId; image: string }[] = [
+  { id: "tab-future", image: FutureLaunch },
+  { id: "tab-mitch", image: Mitchells },
+  { id: "tab-tempeh", image: Tempehfy },
+  { id: "tab-gns", image: Gns },
+  { id: "tab-thought", image: ThoughtLeadership },
+  { id: "tab-src", image: SRCInsurance },
+  { id: "tab-src-2", image: SRCInsurance },
+  { id: "tab-vac", image: VisualArts },
 ];
 
 const Projects = () => {
+  const { t } = useLanguage();
+
   return (
     <>
       <div className="flex items-end justify-between gap-6 flex-wrap">
         <h2 className="mb-1 text-[34px] sm:text-[44px] tracking-[0.02em] text-ink dark:text-surface">
-          Project Highlights
+          {t.projects.heading}
         </h2>
 
         <p className="font-urw text-[18px] max-w-xxl text-ink/60 dark:text-surface/60">
-          Selected work across enterprise WordPress platforms, React components,
-          and production operations.
+          {t.projects.intro}
         </p>
       </div>
 
       <div className="mt-6 panel-container grid lg:grid-cols-2 grid-cols-1 gap-5 sm:gap-x-8 sm:gap-y-6 justify-items-center mx-auto">
         {projectData.map((project, index) => (
           <GlossHover
-            key={index}
+            key={project.id}
             image={project.image}
-            alt={project.alt}
-            portfolioRedirect={project.portfolioRedirect}
-            clientName={project.clientName}
+            alt={t.projectList[project.id].label}
+            portfolioRedirect={`portfolio/#${project.id}`}
+            clientName={t.projectList[project.id].cardTitle}
             index={index}
           />
         ))}

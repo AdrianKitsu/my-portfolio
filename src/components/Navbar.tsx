@@ -1,25 +1,28 @@
 import React, { useEffect, useRef, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
+import LanguageToggle from "./LanguageToggle";
+import { useLanguage } from "../i18n/LanguageContext";
 
 type NavItem = {
-  label: string;
+  key: "home" | "portfolio" | "about" | "downloadCv";
   path: string;
   external?: boolean;
 };
 
 const navItems: NavItem[] = [
-  { label: "Home", path: "/" },
-  { label: "Portfolio", path: "/portfolio" },
-  { label: "About", path: "/about" },
+  { key: "home", path: "/" },
+  { key: "portfolio", path: "/portfolio" },
+  { key: "about", path: "/about" },
   {
-    label: "Download CV",
+    key: "downloadCv",
     path: "/Adrian Borges Solari - CV.pdf",
     external: true,
   },
 ];
 
 const Navbar = () => {
+  const { t } = useLanguage();
   const [open, setOpen] = useState(false);
   const location = useLocation();
   const panelRef = useRef<HTMLDivElement | null>(null);
@@ -47,7 +50,8 @@ const Navbar = () => {
 
   const desktopLinkClass = ({ isActive }: { isActive: boolean }) =>
     [
-      "px-3 py-2 rounded-md font-urw text-sm tracking-[0.12em] uppercase",
+      "px-3 py-2 rounded-md font-urw text-sm tracking-[0.12em] uppercase whitespace-nowrap",
+      "fr:px-2.5 fr:tracking-[0.06em]",
       "transition-colors duration-200",
       isActive
         ? "text-surface bg-brand/20"
@@ -65,7 +69,7 @@ const Navbar = () => {
     ].join(" ");
 
   const desktopCtaClass =
-    "px-4 py-2 rounded-lg font-urw text-sm tracking-[0.12em] uppercase bg-brand text-surface hover:brightness-110 transition";
+    "px-4 py-2 rounded-lg font-urw text-sm tracking-[0.12em] uppercase whitespace-nowrap bg-brand text-surface hover:brightness-110 transition fr:px-3 fr:tracking-[0.06em]";
 
   const mobileCtaClass =
     "block w-full px-4 py-3 rounded-lg font-urw text-base tracking-[0.10em] uppercase bg-brand text-surface hover:brightness-110 transition";
@@ -77,21 +81,21 @@ const Navbar = () => {
           <div className="h-16 flex items-center justify-between">
             <NavLink
               to="/"
-              className="flex items-baseline gap-3 text-surface hover:text-surface transition-colors"
-              aria-label="Go to homepage"
+              className="flex min-w-0 items-baseline gap-3 text-surface hover:text-surface transition-colors"
+              aria-label={t.nav.homeAria}
             >
-              <span className="font-caslon text-xl tracking-[0.02em]">
+              <span className="font-caslon text-xl tracking-[0.02em] whitespace-nowrap">
                 Adrian Borges
               </span>
-              <span className="hidden sm:inline font-urw text-xs tracking-[0.18em] uppercase text-surface/70">
-                Full-stack / Platform Engineer
+              <span className="hidden sm:inline font-urw text-xs tracking-[0.18em] uppercase whitespace-nowrap truncate text-surface/70 fr:tracking-[0.1em] lg:fr:hidden xl:fr:inline">
+                {t.nav.tagline}
               </span>
             </NavLink>
 
             {/* Desktop nav (>=1024px) */}
             <nav
-              className="hidden lg:flex items-center gap-2"
-              aria-label="Primary"
+              className="hidden lg:flex shrink-0 items-center gap-2 fr:gap-1"
+              aria-label={t.nav.primary}
             >
               {navItems.map((item) => {
                 if (item.external) {
@@ -103,7 +107,7 @@ const Navbar = () => {
                       rel="noopener noreferrer"
                       className={desktopCtaClass}
                     >
-                      {item.label}
+                      {t.nav[item.key]}
                     </a>
                   );
                 }
@@ -113,11 +117,12 @@ const Navbar = () => {
                     to={item.path}
                     className={desktopLinkClass}
                   >
-                    {item.label}
+                    {t.nav[item.key]}
                   </NavLink>
                 );
               })}
-              <ThemeToggle className="ml-2" />
+              <LanguageToggle className="ml-2" />
+              <ThemeToggle />
             </nav>
 
             {/* Tablet/Mobile nav (<1024px) */}
@@ -128,7 +133,7 @@ const Navbar = () => {
               aria-controls="mobile-nav-panel"
               className="lg:hidden inline-flex items-center justify-center rounded-md p-2 text-surface hover:bg-surface/10 focus:outline-none focus:ring-2 focus:ring-brand"
             >
-              <span className="sr-only">Toggle menu</span>
+              <span className="sr-only">{t.nav.toggleMenu}</span>
               <div className="relative h-5 w-6">
                 <span
                   className={
@@ -177,7 +182,7 @@ const Navbar = () => {
             (open ? "translate-y-0" : "-translate-y-2")
           }
         >
-          <nav aria-label="Mobile Primary" className="flex flex-col gap-2">
+          <nav aria-label={t.nav.mobilePrimary} className="flex flex-col gap-2">
             {navItems.map((item) => {
               if (item.external) {
                 return (
@@ -189,7 +194,7 @@ const Navbar = () => {
                     className={mobileCtaClass}
                     onClick={() => setOpen(false)}
                   >
-                    {item.label}
+                    {t.nav[item.key]}
                   </a>
                 );
               }
@@ -199,11 +204,14 @@ const Navbar = () => {
                   to={item.path}
                   className={mobileLinkClass}
                 >
-                  {item.label}
+                  {t.nav[item.key]}
                 </NavLink>
               );
             })}
-            <ThemeToggle className="ml-2" />
+            <div className="flex gap-2 ml-2">
+              <LanguageToggle />
+              <ThemeToggle />
+            </div>
           </nav>
         </div>
       </div>
