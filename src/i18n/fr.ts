@@ -18,10 +18,10 @@ const fr: Dictionary = {
     toDark: "Passer au mode sombre",
   },
   footer: {
-    role: "Développeur full-stack / plateforme · Montréal",
+    role: "Développeur full-stack / plateforme · Canada",
   },
   hero: {
-    badge: "Basé à Montréal · Disponible pour contrat et temps plein",
+    badge: "Basé à Canada · Disponible pour contrat et temps plein",
     heading:
       "Développeur full-stack qui conçoit des plateformes web performantes pour des clients d'entreprise.",
     intro:

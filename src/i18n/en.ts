@@ -16,10 +16,10 @@ const en = {
     toDark: "Switch to dark",
   },
   footer: {
-    role: "Full-Stack / Platform Engineer · Montreal",
+    role: "Full-Stack / Platform Engineer · Canada",
   },
   hero: {
-    badge: "Based in Montreal · Available for contract & full-time",
+    badge: "Based in Canada · Available for contract & full-time",
     heading:
       "Full-stack engineer who architects performant web platforms for enterprise clients.",
     intro:
