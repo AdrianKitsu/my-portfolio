@@ -1,9 +1,11 @@
 import type { Dictionary } from "./en";
+import caseStudiesFr from "./caseStudies.fr";
 
 const fr: Dictionary = {
   nav: {
     home: "Accueil",
     portfolio: "Portfolio",
+    caseStudies: "Études de cas",
     about: "À propos",
     downloadCv: "Télécharger le CV",
     tagline: "Développeur full-stack / plateforme",
@@ -81,6 +83,20 @@ const fr: Dictionary = {
     previous: "Projet précédent",
     next: "Projet suivant",
     visitSite: "Visiter le site",
+  },
+  caseStudies: {
+    heading: "Études de cas",
+    intro:
+      "Un regard approfondi sur certains mandats : le problème, mon approche et ce qui a été livré.",
+    tabsLabel: "Études de cas",
+    caseStudy: "Étude de cas",
+    visitSite: "Visiter le site",
+    meta: {
+      client: "Client",
+      focus: "Axes",
+      technologies: "Technologies",
+    },
+    list: caseStudiesFr,
   },
   notFound: {
     title: "Page introuvable",

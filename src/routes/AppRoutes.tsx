@@ -4,12 +4,14 @@ import Home from "../pages/Home";
 import Portfolio from "../pages/Portfolio";
 import NotFound from "../pages/NotFound";
 import About from "../pages/About";
+import CaseStudies from "../pages/CaseStudies";
 
 const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/portfolio" element={<Portfolio />} />
+      <Route path="/case-studies" element={<CaseStudies />} />
       <Route path="/about" element={<About />} />
       <Route path="*" element={<NotFound />} />
     </Routes>

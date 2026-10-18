@@ -1,7 +1,11 @@
+
+
+import caseStudiesEn from "./caseStudies.en";
 const en = {
   nav: {
     home: "Home",
     portfolio: "Portfolio",
+    caseStudies: "Case Studies",
     about: "About",
     downloadCv: "Download CV",
     tagline: "Full-stack / Platform Engineer",
@@ -78,6 +82,20 @@ const en = {
     previous: "Previous project",
     next: "Next project",
     visitSite: "Visit The Site",
+  },
+  caseStudies: {
+    heading: "Case Studies",
+    intro:
+      "A closer look at selected engagements: the problem, how I approached it, and what shipped.",
+    tabsLabel: "Case studies",
+    caseStudy: "Case study",
+    visitSite: "Visit The Site",
+    meta: {
+      client: "Client",
+      focus: "Focus",
+      technologies: "Technologies",
+    },
+    list: caseStudiesEn,
   },
   notFound: {
     title: "Page not found",

@@ -5,7 +5,7 @@ import LanguageToggle from "./LanguageToggle";
 import { useLanguage } from "../i18n/LanguageContext";
 
 type NavItem = {
-  key: "home" | "portfolio" | "about" | "downloadCv";
+  key: "home" | "portfolio" | "caseStudies" | "about" | "downloadCv";
   path: string;
   external?: boolean;
 };
@@ -13,6 +13,7 @@ type NavItem = {
 const navItems: NavItem[] = [
   { key: "home", path: "/" },
   { key: "portfolio", path: "/portfolio" },
+  { key: "caseStudies", path: "/case-studies" },
   { key: "about", path: "/about" },
   {
     key: "downloadCv",
