@@ -35,10 +35,10 @@ export default function ThemeToggle({ className = "" }: Props) {
       className={[
         "relative inline-flex shrink-0 items-center justify-center",
         "h-10 w-10 rounded-full",
-        "border border-ink/10 dark:border-surface/15",
+        "ring-1 ring-inset ring-ink/10 dark:ring-surface/15",
         "bg-white/70 dark:bg-ink/50 backdrop-blur",
         "text-ink dark:text-surface",
-        "hover:border-brand/40 dark:hover:border-brand/50",
+        "hover:ring-brand/40 dark:hover:ring-brand/50",
         "transition",
         "overflow-hidden",
         className,
