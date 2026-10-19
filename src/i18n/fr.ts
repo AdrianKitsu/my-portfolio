@@ -8,7 +8,7 @@ const fr: Dictionary = {
     caseStudies: "Études de cas",
     about: "À propos",
     downloadCv: "Télécharger le CV",
-    tagline: "Développeur full-stack / plateforme",
+    tagline: "Développeur full-stack",
     homeAria: "Aller à l'accueil",
     primary: "Principale",
     mobilePrimary: "Principale (mobile)",

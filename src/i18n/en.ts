@@ -1,5 +1,3 @@
-
-
 import caseStudiesEn from "./caseStudies.en";
 const en = {
   nav: {
@@ -8,7 +6,7 @@ const en = {
     caseStudies: "Case Studies",
     about: "About",
     downloadCv: "Download CV",
-    tagline: "Full-stack / Platform Engineer",
+    tagline: "Full-stack Engineer",
     homeAria: "Go to homepage",
     primary: "Primary",
     mobilePrimary: "Mobile Primary",
